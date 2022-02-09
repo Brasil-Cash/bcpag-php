@@ -33,8 +33,8 @@ final class Routes{
                 return 'links';
             }
         
-            public static function refund ($id) {
-                return "links/$id/refund";
+            public static function transactions ($id) {
+                return "links/$id/transactions";
             }
            
         };

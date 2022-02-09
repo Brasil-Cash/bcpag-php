@@ -24,4 +24,13 @@ final class Links {
             ['json' => $data]
         );
     }
+
+    public function transactions(array $data)
+    {
+        return $this->client->request(
+            BCpag::GET,
+            Routes::links()->transactions($data['id']),
+            ['json' => $data]
+        );
+    }
 }
