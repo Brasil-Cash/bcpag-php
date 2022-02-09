@@ -1,6 +1,6 @@
 {
     "name": "bcpag/sdk-php",
-    "description": "An example HTTP Client implementation using PHP-HTTP and PSR-18",
+    "description": "BCPAG SDK PHP",
     "type": "library",
     "license": "MIT",
     "authors": [
