@@ -19,7 +19,6 @@ final class BCpag
     const DELETE = 'DELETE';
     const PATCH = 'PATCH';
 
-    private $endpoint;
     private $api_key;
     
     private $http;
