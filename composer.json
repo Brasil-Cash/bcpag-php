@@ -3,6 +3,7 @@
     "description": "BCPAG SDK PHP",
     "type": "library",
     "license": "MIT",
+    "version": "v1.0-alpha",
     "authors": [
         {
             "name": "Allex Nogue",
