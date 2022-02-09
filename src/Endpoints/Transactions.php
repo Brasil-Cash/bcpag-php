@@ -17,6 +17,15 @@ final class Transactions{
         $this->client = $client;
     }
 
+    public function create(array $data)
+    {
+        return $this->client->request(
+            BCpag::POST,
+            Routes::transactions()->base(),
+            ['json' => $data]
+        );
+    }
+
     public function refund(array $data)
     {
         return $this->client->request(
