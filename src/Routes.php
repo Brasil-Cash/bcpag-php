@@ -24,4 +24,21 @@ final class Routes{
 
         return $routes;
     }
+
+    public static function links()
+    {
+        $routes = new class{
+            
+            public static function base () {
+                return 'links';
+            }
+        
+            public static function refund ($id) {
+                return "links/$id/refund";
+            }
+           
+        };
+
+        return $routes;
+    }
 }

@@ -6,6 +6,7 @@ namespace BCpag;
 
 use BCpag\Endpoints\Transactions;
 use BCpag\ClientBuilder;
+use BCpag\Endpoints\Links;
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Exception\ClientException as ClientException;
 
@@ -44,6 +45,11 @@ final class BCpag
     public function transactions(): Transactions
     {
         return new Transactions($this);
+    }
+
+    public function links(): Links
+    {
+        return new Links($this);
     }
 
     public function request($method, $uri, $options = [])

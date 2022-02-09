@@ -7,7 +7,7 @@ namespace BCpag\Endpoints;
 use BCpag\BCpag;
 use BCpag\Routes;
 
-final class Transactions{
+final class Links {
 
     private $client;
 
@@ -20,19 +20,8 @@ final class Transactions{
     {
         return $this->client->request(
             BCpag::POST,
-            Routes::transactions()->base(),
+            Routes::links()->base(),
             ['json' => $data]
         );
     }
-
-    public function refund(array $data)
-    {
-        return $this->client->request(
-            BCpag::POST,
-            Routes::transactions()->refund($data['id']),
-            ['json' => $data]
-        );
-    }
-
 }
-
