@@ -39,7 +39,6 @@ final class BCpag
         }
 
         $this->http = new HttpClient($options);
-
     }
     
     public function transactions(): Transactions
