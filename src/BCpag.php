@@ -30,9 +30,7 @@ final class BCpag
 
         $options = ['base_uri' => self::BASE_ENDPOINT];
 
-        $options['headers'] = [
-            'Authorization' => "Bearer " . $this->api_key,
-        ];
+        $options['headers']['Authorization'] = "Bearer " . $this->api_key;
 
         if(!empty($extras)){
             $options = array_merge($options, $extras);
